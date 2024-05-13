@@ -1,0 +1,135 @@
+/* Style CSS for Week 2 coding assignment
+   Author:  Bob Ruzga - 2024 04 24 FE Cohort
+   Subject:  CSS Lab
+   FE coding assignment
+*/
+/*----------------------------------------------------
+Key Terms:
+* selector
+* class
+* id 
+* element 
+* flex 
+
+Objectives:
+    - Use only external styling (this .css file)
+    - Every Element must be styled
+    - Create style rules using class, id, and element selectors
+    - document appropriately
+
+    I'm using copies of my week 1 - index.html, contact.html, and about.html so I can refer to the original week 1 code separately from week 2 code
+*/
+
+/* Set a Universal Background Color for ALL pages  and all elements red border for design testing*/
+* {background-color: rgba(193, 210, 250, 0.19);}
+   /* border: 1px solid red;} Removed for assignment completion*/
+/* Setting for H1 style */
+h1 {
+    text-align: center;
+}
+/* Set Style for h2 titles on pages 2 & 3 */
+h2 {
+    color: rgb(73, 66, 66);
+    }
+/* Set paragraph styles to font family and font size */
+p,
+li,
+th,
+td {font-family: Cambria, serif;
+    font-size: medium;}
+
+th,
+td {
+    background-color: rgb(250, 250, 250);
+}
+
+/* This changes the font in my contact info table to italic so it highlights that specific info */
+td:hover {
+    background-color: rgb(255, 255, 255);
+    font-style: italic;
+}
+
+/* Setting Style for Main Nav bar for all pages using id */
+.nav-bar-main {
+    font-family: Cambria, serif;
+    font-size: 1.5rem;
+        /* adding some padding to the right of the three anchor elements in the nav bar within this class */
+    a {padding-right: 2rem;}
+    }
+
+/* Setting style for RjR Protrait img */
+#RJR-Portrait-img {
+    display: block;
+    margin-left: auto;
+    margin-right: 45%;
+    width: 8%;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(34, 150, 2, 0.5);   
+}
+
+/* Setting style for family portrait image */
+#ruzfam-img {
+    display: block;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(34, 150, 2, 0.5);
+}
+
+/* Setting style for sunrise image */
+#sunrise-img {
+    display: block;
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 2px 1px rgba(229, 206, 27, 0.5);
+}
+
+/* Setting for paragraph on Home Page on what we do */
+.home-whatwedo {
+    color: rgb(9, 0, 0);
+}
+/* Setting footer style for all pages */
+.all-footers {
+    background-color: rgba(5, 101, 246, 0.507);
+    text-align: center;  
+    font-size: small;
+}
+/* Putting a border around the my contact info table */
+table {
+    border: 1rem solid;
+    border-radius: 1rem;
+    border-color: beige;
+    margin-left: 35%;
+    margin-right: 65%;
+}
+
+/* Input label alignments for Form on Contact Us page */
+.contactus-input {
+    text-align: center;
+}
+
+#Fname-label{
+    background-color: white;
+    margin-left: 1rem;
+}
+#Lname-label{
+    background-color: white;
+    margin-left: 1rem;
+}
+#email-label{
+    background-color: white;
+    margin-left: 3rem;
+}
+#phone-label{
+    background-color: white;
+    margin-left: 3rem;
+}
+#Coachingsvc {
+    margin-left: 2rem;
+}
+#Consultingsvc{
+    margin-left: 2.5rem;
+}
+#Codingsvc {
+    margin-left: 1.1rem;
+}

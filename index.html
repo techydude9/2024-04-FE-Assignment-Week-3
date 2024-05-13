@@ -1,0 +1,68 @@
+<!-- This is Week 2 Coding Assignment for Front End Dev class.
+    Author: Bob Ruzga
+    Subject: Week 2 coding assignment - Using Style.CSS for external styling
+
+    Week 1: Objective is to begin the creation of my Ruzga Solutions Group LLC website to eventhually be used as my LLC website
+
+    Steps included in this assignment which you will find below are:
+        -create a homepage named index.html (this file)
+        -At least 3 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
+        - 2 different size headers, a list, 3 images, a table, and a form
+
+    You will also find good developer documentation throughout this code
+
+    Finally you will find a walk thru video for this assignment posted in my YouTube and accessible via an unlisted link
+
+    Please take note on this page I have used the H1 & H4 sized header, an unordered list, an image, and reference to the other 2 pages.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruzga Solutions Group LLC</title>
+
+    <!-- Connecting this html page to my style sheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<main>
+<body>
+
+    <h1>Ruzga Solutions Group LLC</h1> <!-- using the H1 header size-->
+        <!-- This is the section to create 3 pages for this website, a home, About Us and a Contact Us set of pages
+            added class styling for the main nav bar on all pages --> 
+        <div class="nav-bar-main">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <br>
+        <!-- placed an image of the CEO/Founder of RSG LLC here.
+            Using CSS Stylesheet to syle image -->
+        <img id="RJR-Portrait-img" src="images/RR Portrait.jpg" width="100" alt="Owner/Founder Bob Ruzga">
+    <!-- Starting a division section so I can describe who we are-->
+    <div>
+        <p>
+            The team at Ruzga Solutions Group LLC are committed to delivering solutions which are:
+            <!-- Switched to H4 header size for this unordered list-->
+            <h4><ul>
+                <li>High Quality</li>
+                <li>State of the Art</li>
+                <li>Timely</li>
+                <li>Within your budget</li>
+            </ul></h4></p>
+        <p class="home-whatwedo">    
+            These solutions brings immediate, exceptional value to your organization! We have decades of experience to offer our clients. <br>
+            Whether it's coaching your teams neccessary leadership skills to make them perform at an even higher performance level, <br>
+            providing the latest in technology consulting whether it's Artifical Intelligence, Cloud computing, infrastructure or <br>
+            coding needs. We will deliver.
+        </p>
+    </div>
+        <!-- Bottom of the page -->
+        <hr>
+    <footer class="all-footers">
+        <p> Copyright 2024 by Ruzga Solutions Group LLC</p>
+    </footer>
+</main>
+</body>
+</html>

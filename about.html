@@ -1,0 +1,56 @@
+<!-- This is Week 2 Coding Assignment for Front End Dev class.
+    Author: Bob Ruzga
+    Subject: Week 2 coding assignment  - Using Style.CSS for external styling
+
+    Week1 Objective is to begin the creation of my Ruzga Solutions Group LLC website to eventhually be used as my LLC website
+
+    Steps included in this assignment which you will find below are:
+        -create a homepage named index.html (home page, this is the About Us page)
+        -At least 3 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
+        - 2 different size headers, a list, 3 images, a table, and a form
+
+    You will also find good developer documentation throughout this code
+
+    Finally you will find a walk thru video for this assignment posted in my YouTube and accessible via an unlisted link
+
+    Please note on this page I have used an image, H1 & H2 header sizes and carried the footer along
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruzga Solutions Group LLC</title>
+
+   <!-- Connecting this html page to my style sheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<main>
+<body>
+
+    <h1>Ruzga Solutions Group LLC</h1>
+                 <!-- This is the section to create 3 pages for this website, a home, About Us and a Contact Us set of pages 
+                    added class styling for the main nav bar on all pages --> 
+            <div class="nav-bar-main">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <br>
+            <!-- Using the H2 header style here-->
+            <h2>About Us</h2>
+            
+            <div>
+                <p>We believe in family and our clients are like family to us. We work with each client on their specific needs and requirements.</p>
+            </div>
+            <!-- Placed an image here to support the text displayed to the user-->
+            <img id="ruzfam-img" src="images/Ruzga Family.jpg" width="300" alt="Ruzga Family">
+    <!-- Bottom of the page -->
+    <hr>
+    <footer class="all-footers">
+        <p>Copyright 2024 by Ruzga Solutions Group LLC</p>
+    </footer>
+
+</main>
+</body>
+</html>
