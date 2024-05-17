@@ -1,19 +1,23 @@
-<!-- This is Week 2 Coding Assignment for Front End Dev class.
+<!-- This is Week 3 Coding Project for Front End Dev class.
     Author: Bob Ruzga
-    Subject: Week 2 coding assignment - Using Style.CSS for external styling
-    
-    Week 1: Objective is to begin the creation of my Ruzga Solutions Group LLC website to eventhually be used as my LLC website
+    Subject: Week 3 coding Project - Using HTML and Bootstrap
+
+    Week 3: Objective is to recreate my Ruzga Solutions Group LLC website using HTML and Bootstrap
 
     Steps included in this assignment which you will find below are:
-        -create a homepage named index.html (home page, this is the Contact Us page)
-        -At least 3 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
-        - 2 different size headers, a list, 3 images, a table, and a form
+        -create a new wesbite using HTML & Bootstrap
+        -At least 2 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
+        -Use Bootstrap navbar, tab;e, and form
+        -Bootstrap grid througout
+        -Elements should stack vertically when window is small
+        -Must create a new repo with .gitignore and package.json
+        -Repo must be clonable and resulting clone must run on cloned computer (grader)
 
     You will also find good developer documentation throughout this code
 
     Finally you will find a walk thru video for this assignment posted in my YouTube and accessible via an unlisted link
 
-    On this page I am using an image (3 of 3 required), H1/H2/H3 header sizes, a table (offer the ways to connect including an external link to LinkedIn) and a Form to collect information from the prospect
+    Please take note on this page I've added the necessary code for bootstrap usage
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -22,24 +26,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ruzga Solutions Group LLC</title>
 
-   <!-- Connecting this html page to my style sheet -->
-    <link rel="stylesheet" href="./style.css">
+   <!-- Connecting this html page to bootstrap -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <main>
 <body>
+    <!-- Adding in the jquery elements so I can use any bootstrap css which need jquery-->
+    <script src="node_modules/jquery/dist/jquery.js"> </script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 
-    <h1>Ruzga Solutions Group LLC</h1>
-        
-        <!-- This is the section to create 3 pages for this website, a home, About Us and a Contact Us set of pages
-            added class styling for the main nav bar on all pages --> 
-            <div class="nav-bar-main">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Us</a>
-                <a href="contact.html">Contact Us</a>
-            </div>
-        <br>
-        <!-- using the H2 header size here which is consistent with the About page-->
-        <h2>Connect with Us!</h2>
+    <div class="container-fluid">
+        <h1 class="font-weight-bold shadow p-3 mb-5 bg-info rounded">Ruzga Solutions Group LLC</h1> <!-- using the H1 header size-->
+    </div>    
+    
+    <!-- This is the section to create 3 pages for this website, a home, About Us and a Contact Us set of pages
+            added class styling for the main nav bar on all pages using bootstrap NavBar component--> 
+    <nav class="navbar navbar-expand-md navbar-light mr-1" style="background-color: #e3f2fd;">
+        <!-- Placed the menu icon burger on left edge intentionally then place the brand -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="navbar-brand ml-0 font-weight-bold">RSG LLC</span>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            
+            <ul class="navbar-nav mr-auto font-weight-bold">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+            </ul> 
+        </div>
+    </nav>
+    <br>
+
+    <!-- using the H2 header size here which is consistent with the About page-->
+    <h2>Connect with Us!</h2>
         
     <h3><p>We would love to connect with you to explore your needs. Connect with us via:</p></h3>
     <!-- Placed a table here to provide the ways to connect with us including an external link to LinkedIn-->
@@ -61,7 +89,7 @@
     <br><br>
     <!-- I will use a form here to provide a way for the visitor to submit a request for connection-->
     <form>
-        <div class="contactus-input">
+        <div class=" ">
             <label for="firstname">First Name:</label>
             <input id="Fname-label" type="text" name="firstname" placeholder="First Name">
             <br>
@@ -93,12 +121,12 @@
 
     <!-- moved sunrise image to bottom of Contact Us page-->
     <br>
-        <img id="sunrise-img" src="images/sunrise.jpg" width="150" alt="Sunrise at 30,000 feet">
+        <img src="images/sunrise.jpg" width="150" alt="Sunrise at 30,000 feet">
     <br>
 
     <!-- Bottom of the page -->
     <hr>
-    <footer class="all-footers">
+    <footer class="text-center">
         <p>Copyright 2024 by Ruzga Solutions Group LLC</p>
     </footer>
 
