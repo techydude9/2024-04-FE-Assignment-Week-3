@@ -7,7 +7,7 @@
     Steps included in this assignment which you will find below are:
         -create a new wesbite using HTML & Bootstrap
         -At least 2 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
-        -Use Bootstrap navbar, tab;e, and form
+        -Use Bootstrap navbar, table, and form
         -Bootstrap grid througout
         -Elements should stack vertically when window is small
         -Must create a new repo with .gitignore and package.json
@@ -52,13 +52,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             
             <ul class="navbar-nav mr-auto font-weight-bold">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </li>
             </ul> 
@@ -66,66 +66,102 @@
     </nav>
     <br>
 
-    <!-- using the H2 header size here which is consistent with the About page-->
-    <h2>Connect with Us!</h2>
-        
-    <h3><p>We would love to connect with you to explore your needs. Connect with us via:</p></h3>
-    <!-- Placed a table here to provide the ways to connect with us including an external link to LinkedIn-->
-    <table>
-        <tr>
-            <td>Email:</td>
-            <td>bob.ruzga@gmail.com</td>
-        </tr>
-        <tr>
-            <td>Phone:</td>
-            <td>+1-815-519-8328</td>
-        </tr>
-        <tr>
-            <td>LinkedIn:</td>
-            <td><a href="https://www.linkedin.com/in/bobruzga/">Bob Ruzga</a>
-            </td>
-        </tr>
-    </table>
-    <br><br>
-    <!-- I will use a form here to provide a way for the visitor to submit a request for connection-->
-    <form>
-        <div class=" ">
-            <label for="firstname">First Name:</label>
-            <input id="Fname-label" type="text" name="firstname" placeholder="First Name">
-            <br>
-            <label for="lastname">Last Name:</label>
-            <input id="Lname-label" type="text" name="lastname" placeholder="Last Name">
-            <br>
-            <label for="emailaddress">Email:</label>
-            <input id="email-label" type="email" name="emailaddress" placeholder="Your Email">
-            <br>
-            <label for="phonenumber">Phone:</label>
-            <input id="phone-label" type="tel" name="phonenumber" placeholder="Phone Number">
-            <br><br>
-
-            Interested in: <br>
-            <!-- I'm offering a 3 option checkbox so they can choose one or more service options-->
-            <input type="checkbox" id="Coachingsvc" name="Coachingsvc"/>
-            <label for="Coachingsvc">Coaching  </label>
-            <br>
-            <input type="checkbox" id="Consultingsvc" name="Consultingsvc"/>
-            <label for="Consultingsvc">Consulting</label>
-            <br>
-            <input type="checkbox" id="Codingsvc" name="Codingsvc"/>
-            <label for="Codingsvc">Coding</label>
-            <br><br>
-            <input id="Notes-field" type="text" name="notes" placeholder="Notes/Comments"><br><br>
-            <input type="submit" value="Submit">
+    <!--Moved the image up here and containerized the image and h2 h3 headings -->
+<div class="container-fluid" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="container-lg">
+            <img class="img-fluid rounded float-md-right" src="images/Gemini_Handshake.jpg" width="350" alt="Sunrise at 30,000 feet">
         </div>
-    </form>
+        <br>
 
-    <!-- moved sunrise image to bottom of Contact Us page-->
-    <br>
-        <img src="images/sunrise.jpg" width="150" alt="Sunrise at 30,000 feet">
-    <br>
+        <h2>Connect with Us!</h2>
+        
+        <h4><p>We would love to connect with you to explore your needs. Connect with us via:</p></h4>
+        <br>
+    </div>
 
-    <!-- Bottom of the page -->
-    <hr>
+    <!-- Placed a table here to provide the ways to connect with us including an external link to LinkedIn
+        for Week 3 I'm using Bootstrap to control table location, affects (Hover), containerized -->
+    <div class="container table-borderless table-responsive ml-5 table-secondary" style="width: fit-content;">   
+        <table class="table table-sm table-hover">
+            <tr scope="Row">
+                <td>Email:</td>
+                <td>bob.ruzga@gmail.com</td>
+            </tr>
+            <tr scope="Row">
+                <td>Phone:</td>
+                <td>+1-815-519-8328</td>
+            </tr>
+            <tr scope="Row">
+                <td>LinkedIn:</td>
+                <td><a href="https://www.linkedin.com/in/bobruzga/">Bob Ruzga</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <br><br>
+    <!-- I will use a form here to provide a way for the visitor to submit a request for connection
+        using bootstrap for week3 I've containerized portions of the table for better response on display size changes for the different sections below  -->
+    <div class="container">
+        <form>
+            <div>
+                <p class="font-weight-bold">Please provide us you contact info and we'll get back to you.</p>
+                <br>
+                <div class="form-row">
+                    <div class="col">
+                        <label for="firstname">First Name:</label>
+                        <input class="form-control" id="Fname-label" type="text" name="firstname" placeholder="First Name">
+                    </div>
+                    <div class="col">
+                        <label for="lastname">Last Name:</label>
+                        <input class="form-control" id="Lname-label" type="text" name="lastname" placeholder="Last Name">
+                    </div>
+                    <br>
+                </div>
+                <label for="emailaddress">Email:</label>
+                <input class="form-control" id="email-label" type="email" name="emailaddress" placeholder="Your Email">
+                <br>
+                <label for="phonenumber">Phone:</label>
+                <input class="form-control" id="phone-label" type="tel" name="phonenumber" placeholder="Phone Number">
+                <br><br>
+            </div>
+            <div>   
+                <!-- I'm offering a 3 option checkbox so they can choose one or more service options
+                    Bootstrap container for better response for alternative screen sizes -->
+                
+                <div class="container-fluid row">
+                    <div class="col-md-3"> 
+                        <p>Interested in:</p>
+                    </div>
+                    <Div class="col-md-3">
+                      <input type="checkbox" id="Coachingsvc" name="Coachingsvc"/>
+                      <label for="Coachingsvc">Coaching  </label>
+                    </Div>                
+                
+                    <div class="col-md-3">
+                       <input type="checkbox" id="Consultingsvc" name="Consultingsvc"/>
+                       <label for="Consultingsvc">Consulting</label>
+                    </div>
+            
+                    <div class="col-md-3">
+                      <input type="checkbox" id="Codingsvc" name="Codingsvc"/>
+                      <label for="Codingsvc">Coding</label>
+                    </div>
+                </div>
+            </div>
+                <br>
+                <input class="form-control" id="Notes-field" type="text" name="notes" placeholder="Notes/Comments"><br><br>
+            </div>
+
+            <!-- Centers the Submit button -->
+            <div style="text-align: center;">
+                <button type="submit" class="btn btn-info">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Bottom of the page including a horizontal rule -->
+    <hr> 
     <footer class="text-center">
         <p>Copyright 2024 by Ruzga Solutions Group LLC</p>
     </footer>

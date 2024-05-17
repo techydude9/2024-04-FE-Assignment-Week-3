@@ -5,8 +5,8 @@
     Week 3: Objective is to recreate my Ruzga Solutions Group LLC website using HTML and Bootstrap
 
     Steps included in this assignment which you will find below are:
-        -xcreate a new wesbite using HTML & Bootstrap
-        -xAt least 2 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
+        -create a new wesbite using HTML & Bootstrap
+        -At least 2 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
         -Use Bootstrap navbar, table, and form
         -Bootstrap grid througout
         -Elements should stack vertically when window is small
@@ -46,7 +46,7 @@
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-
+        <!-- Added the RSG LLC Brand text for the navbar -->
         <span class="navbar-brand ml-0 font-weight-bold">RSG LLC</span>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -65,31 +65,41 @@
         </div>
     </nav>
     <br>
-    <!-- Starting a division section so I can describe who we are-->
+    <!-- Starting a division section so I can describe who we are
+        Created a Div for a container class to control the page layout -->
     
-    <div class="container-fluid">
-        <dir class="container-lg">
+    <div class="container-fluid" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <div class="container-lg">
             <!-- placed an image of the CEO/Founder of RSG LLC here.  I've made if fluid with a right side alignment-->
             <img class="img-fluid rounded float-md-right m-2" src="images/RR Portrait.jpg" width="200" alt="Owner/Founder Bob Ruzga">
-            </dir>
+        </div>
 
         <p>
             The team at Ruzga Solutions Group LLC are committed to delivering solutions which are:
-            <!-- Switched to H4 header size for this unordered list-->
-            <h4><ul>
-                <li>High Quality</li>
-                <li>State of the Art</li>
-                <li>Timely</li>
-                <li>Within your budget</li>
-            </ul></h4></p>
+            <!-- Switched to H4 header size for this unordered list and addind padding to left -->
+            <h4>
+                <ul class="pl-5">
+                    <li>Exceptionally Professional Quality</li>
+                    <li>State of the Art</li>
+                    <li>Deliverd when YOU need it</li>
+                    <li>Within YOUR budget</li>
+                </ul>
+            </h4>
+        </p>
         <p class=" ">    
-            These solutions brings immediate, exceptional value to your organization! We have decades of experience to offer our clients. <br>
-            Whether it's coaching your teams neccessary leadership skills to make them perform at an even higher performance level, <br>
-            providing the latest in technology consulting whether it's Artifical Intelligence, Cloud computing, infrastructure or <br>
+            These solutions brings immediate, exceptional value to your organization! We have decades of experience to offer our clients.
+            Whether it's coaching your teams neccessary leadership skills to make them perform at an even higher performance level,
+            providing the latest in technology consulting whether it's Artifical Intelligence, Cloud computing, infrastructure or
             coding needs. We will deliver.
         </p>
+        <!-- Added an image to the lower part of the page and gave it its own div for better control of imag positioning -->
+        <div class="container-lg">
+            <!-- placed an image of services offered in a puzzle pic.  I've made if fluid with a right side alignment-->
+            <img class="img-fluid rounded mx-auto d-block shadow-lg" src="images/Gemini_Consult-Coach-Code IT Puzzle.jpg" width="300" alt="Owner/Founder Bob Ruzga">
+        </div>
     </div>
-        <!-- Bottom of the page -->
+
+        <!-- Bottom of the page footer including a horizontal rule-->
         <hr>
     <footer class="text-center">
         <p> Copyright 2024 by Ruzga Solutions Group LLC</p>

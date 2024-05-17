@@ -7,7 +7,7 @@
     Steps included in this assignment which you will find below are:
         -create a new wesbite using HTML & Bootstrap
         -At least 2 pages with links to navigate between all pages present on each page. This will be "Home", "About", and "Contact Us"
-        -Use Bootstrap navbar, tab;e, and form
+        -Use Bootstrap navbar, table, and form
         -Bootstrap grid througout
         -Elements should stack vertically when window is small
         -Must create a new repo with .gitignore and package.json
@@ -52,10 +52,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
         
             <ul class="navbar-nav mr-auto font-weight-bold">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="about.html">About Us</a>
                 </li>
                 <li class="nav-item">
@@ -67,14 +67,18 @@
     <br>
 
    <!-- Using the H2 header style here-->
+    <div class="container-fluid" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
             <h2>About Us</h2>
             
             <div>
                 <p>We believe in family and our clients are like family to us. We work with each client on their specific needs and requirements.</p>
             </div>
-            <!-- Placed an image here to support the text displayed to the user-->
-            <img src="images/Ruzga Family.jpg" width="300" alt="Ruzga Family">
-    <!-- Bottom of the page -->
+            <!-- Placed an image here to support the text displayed to the user using bootstrap to handle image positioning and 
+                    control-->
+            <img class="img-fluid rounded mx-auto d-block" src="images/Ruzga Family.jpg" width="300" alt="Ruzga Family">
+    </div>
+
+    <!-- Bottom of the page for footer including a horizontal rule -->
     <hr>
     <footer class="text-center">
         <p>Copyright 2024 by Ruzga Solutions Group LLC</p>
